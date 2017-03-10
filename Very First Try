@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+          <title>
+          <meta charset="UTF-8"/>
+           ВАЛЬГАЛЛА
+          </title>
+           <style type="text/css">
+                 .block1 { 
+                  width: 200px;
+                  height: 30px;  
+                  background: #ccc;
+                  padding: 0px;
+                  padding-left: 100px; 
+                  border: solid 1px black; 
+                  float: left;
+                 }
+                 .block2 {
+                  width: 200px;
+                  height: 30px; 
+                  background: #00ffff;
+                  padding: 0px;
+                  padding-right: 100px; 
+                  border: solid 1px black;
+                  float: right;
+                 }
+                 .images {
+                  width: 1000px;
+                  height: 400px;
+                  padding: 25px;
+                  padding-bottom: 50px;
+                  border: solid 25px black;
+                  float: none;
+
+
+
+                 }
+          </style>
+    </head>
+          <body>
+
+            <h3> Seems nice website 
+                 What about paragraph?</h1>
+           <h1> And what about this?
+                So i see delay, which longs for a seconds or even minutes. Il try check, how long time need be expiried before saved index.html 
+                start show any difference in text (text in body block)
+                I refreshed page after saving index.html (maybe for 5 seconds nearly) and found no delay. Interesting, am i mistaken before, when 
+                indicated some delay? </h1>
+           <h1>  No. I was righh. There is some delay. Now it was nearly 30 seconds or more. Not sure where from it comes, maybe github database
+                refreshing every minute at constant time, or something like this.</h1>
+            <a href="http://pikabu.ru"> Ссылка на пикабу</a>
+            <p></p>
+            <a href="D:\WORKSHOP\BASIC LEVEL (Intrance)\Personal Site\Документ на который ссылаются.docx"> Ссылка на файл компьютера </a>
+
+            <p></p>Экcперименты со шрифтами
+            <p></p><strong> 1. Жирный шрифт </strong>
+            <p></p><em> 2. Текст курсивом </em>
+            <p></p><strong><em>3. Жирный текст курсивом</em></strong><br/>
+            Воспользовался тегом br. Как видно, есть отличие от предыдущих междустрочных интервалов, которые использовались парным тегом p <br/>
+            1)<h1>Каждое</h1> 2)<h2>следующее</h2> 3)<h3>слово</h3><h4>будет</h4><h5>меньшего</h5><h6>размера</h6> Однако я хочу убрать абзацы между словами. <br/>
+
+
+            <div class="images">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/5/51/Orc_shaman.jpg" border=25px height=350px/>
+            <img src="D:\Infoteka\8 - My Documents\Guldan.jpg" border=25px align=top height=350px/>
+            <img  src="Guldan.jpg" border=25px align=top height=350px/>]
+            
+            <div class="block1"> Orc shaman </div>
+            <div class="block2"> Guldan </div>
+            </div>
+            <p></p>
+            <table border="10">
+                  <tr><td>Уровень</td><td>Интеллект</td><td>Очков здоровья</td></tr>
+                  <tr><td>1</td><td>5</td><td>50</td></tr>
+                  <tr><td>2</td><td>8</td><td>75</td></tr>
+                  <tr><td>3</td><td>11</td><td>100</td></tr>
+                  <tr><td>4</td><td>14</td><td><input value="125" /></td></tr>
+            </table>
+            <p></p>
+
+            <input value="Не трогай меня" />
+            <p></p>
+
+            <textarea class="images"> Напиши историю для своего орка </textarea>
+          </body>
+    </html>
