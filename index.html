@@ -7,9 +7,8 @@
   <style>
 .container,
 .container2 {
-  background: #777;
   text-align: center;
-  color: purple;
+  background: #777;
   width: 300px;
   height: 300px;
   margin: 50px;
@@ -17,11 +16,29 @@
   overflow: hidden;
   position: relative;
   float: left;
-  font-size: 30px;
+  font-size: 30px; 
 }
 
-.container::after,
-.container2::after {
+.container:before {
+  content: "Защищено от копирования";  
+}
+
+.container2:before {
+  content: "Незащищено от копирования";
+}
+  
+.container:before,
+.container2:before {
+  position: absolute;
+  color: white;
+  bottom: 15px;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
+.container:after,
+.container2:after {
   content: '';
   width: 300px;
   height: 300px;
@@ -29,16 +46,20 @@
   left: 0;
   display: block;
   position: absolute;
+/*  background: radial-gradient(transparent, rgba(0,0,0,0.9));*/
   background: #333;
   opacity: 0.45;
+  visibility: visible;
   transition: background 1s, opacity 1s;
 }
 
-.container:hover::after {
+
+.container:hover:before,
+.container:hover:after {
   opacity: 0;
 }
 
-.container2:hover::after {
+.container2:hover:after {
   visibility: hidden;
 }
 </style>
@@ -46,12 +67,10 @@
 <body>
 
 <div class="container">
-	 Защищено от копирования
 	<img src="http://lorempixel.com/300/300/animals/" alt="">
 </div>
 
 <div class="container2">
-	Незащищено от копирования
 	<img src="http://lorempixel.com/300/300/animals/" alt="">
 </div>
 
